@@ -48,28 +48,6 @@ mutation {
 }
 ```
 
-```gql
-mutation {
-  addGroup(title: "") {
-    group {
-      id
-      title
-    }
-  }
-}
-```
-
-```gql
-mutation {
-  addGroup(title: "  ") {
-    group {
-      id
-      title
-    }
-  }
-}
-```
-
 3. Група може бути додана з заповненою назвою
 
 ```gql
@@ -99,36 +77,6 @@ query {
 ```gql
 mutation {
   addTask(body: null) {
-    task {
-      id
-      body
-      group {
-        id
-        title
-      }
-    }
-  }
-}
-```
-
-```gql
-mutation {
-  addTask(body: "") {
-    task {
-      id
-      body
-      group {
-        id
-        title
-      }
-    }
-  }
-}
-```
-
-```gql
-mutation {
-  addTask(body: "  ") {
     task {
       id
       body
