@@ -29,7 +29,7 @@ mutation {
 
 
 ```gql
-{
+query {
   groups {
     id
     title
@@ -50,7 +50,7 @@ mutation {
 ```
 
 ```gql
-{
+query {
   tasks {
     id
     body
@@ -63,7 +63,7 @@ mutation {
 ```
 
 ```gql
-{
+query {
   tasks(groupId: "123") {
     id
     body
