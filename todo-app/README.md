@@ -6,6 +6,7 @@
 - потрібно використовувати фреймворк ASP.NET Core 6.0
 - потрібно використовувати одну з таких баз даних (Microsoft SQL Server, PostgreSQL, MySQL, MongoDb, ElasticSearch, Redis)
 - API та база даних повинні запускатись в докер контейнері, для запуску має бути достатньо написати в терміналі `docker-compose up`
+- мають бути [інтеграційні](https://docs.microsoft.com/en-us/aspnet/core/test/integration-tests) та [юніт](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices) тести
 
 ## Функціональні вимоги:
 - данні повинні зберігатися між запусками (тобто, якщо я зупиню контейнер і API відповідно, а потім перезапущу його, то попередньо збережені данні повинні залишитись)
